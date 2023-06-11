@@ -29,7 +29,7 @@ int main(){
                 printf("%d.", i);
             }else{
                 printf("%d, ", i);
-            }
+            } 
         }
         if(cont%10==0){
             printf("\n");
@@ -37,6 +37,5 @@ int main(){
         cont++;
 
     }
-
     return 0;
 }
