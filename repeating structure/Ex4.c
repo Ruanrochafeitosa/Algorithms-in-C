@@ -3,10 +3,11 @@
 #include<stdio.h>
 int main(){
 
-    int num, i;
+    int num, i, cont=0;
     printf("Please enter a number");
     scanf("%d", &num);
     //Ascending 
+    printf("==========Ascending order==========");
     for(i=1;i<=num;i++){
         if(i%2==1){
             if(i==num){
@@ -15,6 +16,25 @@ int main(){
                 printf("%d, ", i);
             }
         }
+        if(cont%10==0){
+            printf("\n");
+        }
+        cont++;
+    }
+    //Descending
+    for(i=num;i>=1;i--){
+        if(i%2==1){
+            if(i==1){
+                printf("%d.", i);
+            }else{
+                printf("%d, ", i);
+            }
+        }
+        if(cont%10==0){
+            printf("\n");
+        }
+        cont++;
+
     }
 
     return 0;
