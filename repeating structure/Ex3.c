@@ -33,7 +33,6 @@ int main(){
                 printf("\n");
         }
     }
-    printf("\nÉ isso, um beijo da Anitta");
 
     return 0;
 }
