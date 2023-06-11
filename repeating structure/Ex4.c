@@ -7,7 +7,7 @@ int main(){
     printf("Please enter a number");
     scanf("%d", &num);
     //Ascending 
-    printf("==========Ascending order==========");
+    printf("\n==========Ascending order==========\n");
     for(i=1;i<=num;i++){
         if(i%2==1){
             if(i==num){
@@ -22,6 +22,7 @@ int main(){
         cont++;
     }
     //Descending
+    printf("\n==========Descending order==========\n");
     for(i=num;i>=1;i--){
         if(i%2==1){
             if(i==1){
