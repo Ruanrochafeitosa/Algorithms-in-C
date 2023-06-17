@@ -4,17 +4,23 @@ largets number and how many times it was entered. The user has to input the quan
 #include<stdio.h>
 int main(){
 
-    int num, q, i, big=0;
+    int quant, i, q=0, big=0;
     printf("Please inform the quantity of number you wish to add:");
-    scanf("%d", &q);
+    scanf("%d", &quant);
+    int num[quant];
 
-    for(i=1;i<=q;i++){
+    for(i=0;i<quant;i++){
         printf("Enter a number:");
-        scanf("%d", &num);
-        if(big<num){
-            big=num;
-
-        }else if();
+        scanf("%d", &num[i]);
+        if(big<num[i]){
+            big=num[i];
+        }
     }
+    for(i=0;i<quant;i++){
+        if(big==num[i]){
+            q++;
+        }
+    }
+    printf("The highst number is %d, it appeared %d times.", big, q);
     return 0;
 }
